@@ -188,12 +188,12 @@ if int(WareChoice) == 2:
         "left path as if it is expecting someone. you pick a nearby club and whack the creature as hard as you can "
     )
 #    from WareBattle import
-food = input(print("Type 1 to eat the meat (WARNING chane of food poisoning) type 2 to walk away")).strip()
-wareFood = randrange(-5, 5)
+
+food = input(print("Type 1 to eat the meat (WARNING chance of food poisoning) type 2 to walk away")).strip()
+wareFood = randrange(1,2)
 printHeath = "Your health is now " + str(health) + "."
 if food == 1:
     print("you eat the meat")
-    health -= wareFood
     print(printHeath)
     if wareFood == 1:
         health -= 3
