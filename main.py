@@ -4,6 +4,8 @@ from random import randrange
 # from io import StringIO
 import sys
 
+import rand as rand
+
 health = 20
 sanity = 20
 import cutscene1
@@ -193,8 +195,12 @@ if food == 1:
     print("you eat the meat")
     health -= wareFood
     print(printHeath)
-if wareFood <= -1:
-    print("Aw man you got food poisoning")
+    if wareFood == 1:
+        health -= 3
+    if wareFood == 2:
+        health += 3
+    if wareFood == 1:
+        print("Aw man! You got food poisoning")
 if food == 2:
     print("you walk away and vow never to return")
 print(printHeath)
