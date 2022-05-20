@@ -1,0 +1,3 @@
+
+inducted = False
+monkkilled = False
