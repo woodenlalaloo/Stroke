@@ -2,9 +2,9 @@ from time import sleep
 import random
 from random import randrange
 # from io import StringIO
+from clear import clear
 import sys
 
-import rand as rand
 
 health = 20
 sanity = 20
@@ -56,7 +56,7 @@ print("You get up on a stick of concrete and follow the rock")
 # sleep(1)
 print("you get in a car and drive out of the city")
 # sleep(1)
-print("You look to your left and see the rock at the wheel A## sleep!")
+print("You look to your left and see the rock at the wheel asleep!")
 # sleep(0.5)
 print("You: WAKE UP DWANE!!!!")
 # sleep(1.5)
@@ -155,7 +155,7 @@ answered = input(
 if int(answered) == 1:
     bool(inducted) == True
     print(
-        "the Monke monk grabs you and takes you to his house you get inducted into his cult you live out the rest of "
+        "The monke monk grabs you and takes you to his house where you get inducted into his cult. You live out the rest of "
         "your life a chonk monk and die a sad life married to Monkela and sacrificed to the gods. "
     )
     exec(open("slainDeath.py").read())
@@ -186,16 +186,16 @@ if int(WareChoice) == 1:
 if int(WareChoice) == 2:
     print(
         "you go on the right path and on the way you see a hideous beast. You notice it is looking intently at the "
-        "left path as if it is expecting someone. you pick a nearby club and whack the creature as hard as you can "
+        "left path as if it is expecting someone. you pick a nearby club and whack the creature as hard as you can. It looks dazed for a second, then falls to the ground "
     )
 #    from WareBattle import
 
 food = input(print("Type 1 to eat the meat (WARNING chance of food poisoning) type 2 to walk away")).strip()
 wareFood = randrange(1,2)
-printHeath = "Your health is now " + str(health) + "."
+printHealth = "Your health is now " + str(health) + "."
 if food == 1:
     print("you eat the meat")
-    print(printHeath)
+    print(printHealth)
     if wareFood == 1:
         health -= 3
     if wareFood == 2:
@@ -207,72 +207,12 @@ if food == 2:
 print("You leave the warehouse and see a path leading to a highway to your right. To your left you see some woods.")
 
 wildernessVentureChoice= input("Type 1 to go to the highway. Type 2 to venture into the woods.")
-if wildernessVentureChoice == "1":
+if wildernessVentureChoice == "2":
   print("You venture into the woods.")
   exec(open("woods.py").read())
-if wildernessVentureChoice =="2":
+if wildernessVentureChoice =="1":
   print("You follow the path and walk onto the highway.")
   exec(open("highway.py").read())
 
-#code here will be moved to highway.py when i get the chance to
-print("You are walking on the highway when suddenly you see a truck driving.")
-# sleep(3)
-print("It's a... walmart truck???")
-# sleep(1.5)
-print("You quickly take out the flare gun Dwane gave you and as the truck is going by you shoot the driver in the head, instintly killing them.")
-# sleep(4)
-print("The truck goes off the road and into the ditch where you despose of the body and decide you will live in the truck.")
-# sleep(3)
-print("You open the back and find that theres lots of food, water, and toys.")
-# sleep(2)
-print("Most of the toys are not useful but behind all the toys you find something amazing. A crossbow. You can fight people and creatures now.")
-# sleep(4)
-print("You also find some bandages and wrap them around your laceration.")
-# sleep(1.5)
-print("You decide to go to sleep")
-#end of code that will be added to highway.py
-#code here will be moved to woods.py
-print("You venture into the woods and find a small 'Fort' that was probably made by some kids.")
-# sleep(2)
-print("You think to yourself 'It's better then nothing' and sleep the night there.")
-# sleep(5)
-print("You wake up and start looking around the forest for some kind of food.")
-# sleep(3)
-print("You find a berry bush.")
-pickBerries1 == input("Type 1 to pick the berries. Type 2 to leave them.")
-if pickBerries1 == "1":
-  print("You pick and eat the berries.")
-  berryFoodPoisoning1 == randrange(-5,5)
-  if berryFoodPoisoning1 >= -1:
-    print("Oh no, you got food poisoning. You proceed to vomit the contents of your stomach.")
-    # sleep(2)
-  health += berryFoodPoisoning1
-  print(printHealth)
-if pickBerries1 == "2":
-  print("You leave the berries.")
 
-# sleep(3)
-print("You find a long, sturdy stick and use the utility knife Dwane had to turn it into a spear.")
-# sleep(2)
-print("You move around the forest, looking for something to kill. You almost got some squirells but you missed.")
-# sleep(2)
-print("After a day with no luck you go to sleep.")
-# sleep(5)
-print("You wake up in the morning and start hunting again. Eventualy you find a deer and start sneaking up to it. Suddenly its ears perk up. It spins around and sees you. It's hair is sticking up and it's ears are back.")
-# sleep(5)
-print("You know you read somewhere that means that it's scared. Then, out of the blue, it charges straight at you and throws you off of the cliff. Time seems to slow down")
-# sleep(2)
-print("You think to yourself: Why did I even try. What was the point.")
-print(1.5)
-print("You plummet to the forest floor where you black out.")
-# sleep(6)
-print("You come to your senses and find out that you cant move. You try to get up, nothing. You try to move your fingers, nothing.")
-# sleep(3)
-print("You realize you must have broken your neck and are paralized.")
-# sleep(1.5)
-print("Just lying down on the dirt, soon bugs and other insects start to suck your blood.")
-# sleep(2)
-print("You die a slow, painful death, away from family or friends.")
-exec(open("starveDeath.py").read())
-#end of code to add to woods.py
-#we cant call main.py anymore or it will restart it so instead make a new file named part2.py or smth and go from there
+
